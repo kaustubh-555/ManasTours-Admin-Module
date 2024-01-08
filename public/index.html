@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+<body>
+    <section id="navBarContainer">
+        <div id="loginStrip">
+                <div id="buffer">
+                </div>
+                <a href="./login-page.html"  id="loginBtn" class="authBtn">Login</a>
+                <a href="./register-page.html" id="registerBtn" class="authBtn">Register</a>
+        </div>
+        <div id="navBar">
+            <div id="logoContainer">
+                <img src="./images/manasLogo.png" alt="" width="200">
+            </div>
+            <div id="navigators">
+                <a href="./index.html" class="navigatorBtns">Home</a>
+                <a href="#about" class="navigatorBtns">About</a>
+                <a href="footer" class="navigatorBtns">Contact</a>
+                <a href="./filter.html" class="navigatorBtns">Explore</a>
+            </div>
+        </div>
+    </section>
+    <section id="heroSection">
+        <div id="heroText">
+            <div>
+                <h1>Travel with us</h1>
+                <p>
+                    Travel with us to the most beautiful places in the world</p>
+                <a href="./filter.html" class="bigBtn">Explore Tours</a>
+            </div>
+        </div>
+        <div id="heroimg">
+            <img src="./images/hero.png" alt="">
+        </div>
+    </section>
+
+    <div id="mainContainer">
+
+        <div class="toursDisplay" id="mostPopularContainer">
+            <div class="section-title">
+                <h2>Most Popular</h2>
+            </div>
+            <div class="tours" id="mostPopularTours">
+                
+            </div>
+        </div>
+        <div class="toursDisplay" id="discountContainer">
+            <div class="section-title">
+                <h2>Discounts And Offers</h2>
+            </div>
+            <div class="tours" id="offerTours">               
+                
+        </div>
+        <div class="toursDisplay">
+            <a href="./filter.html" class="bigBtn" id="allTours">Explore All Tours</a>
+        </div>
+        <div class="toursDisplay" id="aboutUSContainer">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="aboutUs">
+                <div class="aboutUsImage">
+                    <img src="./images/aboutUs.jpg" alt="">
+                </div>
+                <div class="aboutUsText">
+                    Welcome to Manas Voyagers, your passport to unforgettable journeys and enriching adventures. We are a dedicated team of travel enthusiasts, committed to curating extraordinary travel experiences that create memories to last a lifetime. With a passion for exploration and a deep love for diverse cultures, our mission is to share the world's wonders with you. <br> <br>
+                    At Manas Voyagers, we believe in personalized, authentic travel. Whether you're seeking a tranquil beach escape, a thrilling trek through the Himalayas, or an immersive cultural tour, we have the expertise to make it happen. Our well-versed team ensures every detail is carefully crafted, so you can relax and savor the magic of your journey.  <br> <br>
+                    Join us in discovering the world's hidden gems, and let Manas Voyagers turn your travel dreams into reality.
+                    </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    
+                </div>
+                <div class="footer-section">
+                    <img src="./images/footerLogo.jpg" alt="" width="150">
+                    <p>We always make our customers happy by providing as many choices as possible</p>
+                    <div class="footer-social-icons" style="width: fit-content;">
+                        <img src="./images/facebook.png" alt="">
+                        <img src="./images/twitter.png" alt="">
+                        <img src="./images/instagram.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Menu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Subscribe on our destination review <br> newsletters</h3>
+                    <form>
+                        <div class="form-section">
+                            <img src="./images/messagefooter.png" alt="">
+                            <label for="email"> Your Email
+                                <input type="email" id="email" name="email" placeholder="exp - abc@gmail.com ">
+                            </label>
+                        </div>
+                        <button type="submit"><img src="./images/arrowleft.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/homePageScripts.js"></script>
+</body>
+</html>

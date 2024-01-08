@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <section id="navBarContainer">
+        <div class="imageContainer">
+            <img src="./images/footerLogo.jpg" alt="" width="100">
+        </div>
+        <div class="navigatorContainers">
+                <a href="../adminIndex.html">Home</a>
+                <a href="../form.html">Add Tour</a>
+                <a href="./graph.html">Analysis</a>
+                <a href="./editTour.html">Edit Tour</a>
+        </div>
+
+    </section>
+    <form >
+        <label for="name">Tour Name:</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="visits">Visits:</label>
+        <input type="number" name="visits" id="visits" required><br>
+        <label for="price">Price:</label>
+        <input type="number" name="price" id="price" required><br>
+        <label for="AverageRating">Average Rating:</label>
+        <input type="number" name="AverageRating" id="AverageRating" required><br>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" required></textarea><br>
+        <label for="duration">Duration:</label>
+        <input type="text" name="duration" id="duration" required><br>
+        <label for="discount">Discount:</label>
+        <input type="number" name="discount" id="discount" required><br>
+        <label for="places">Places (comma-separated):</label>
+        <input type="text" name="places" id="places" required><br>
+        <label for="stay">Stay:</label>
+        <input type="text" name="stay" id="stay" required><br>
+        <label for="food">Food:</label>
+        <input type="text" name="food" id="food" required><br>
+        <div style="display: flex; justify-content: center; margin: 30px;">
+            <button id="submit" style="background-color: #7b61ff; color: white; padding-inline: 20px; padding-block: 10px; font-size: 1.25rem;">Submit</button>
+            <button id="deleteBtn" style="background-color: #7b61ff; color: white; margin-inline: 20px;padding-inline: 20px; padding-block: 10px; font-size: 1.25rem;">Delete Tour</button>
+        </div>
+      </form>
+      <script src="./editPage.js"></script>
+</body>
+</html>

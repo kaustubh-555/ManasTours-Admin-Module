@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tour Data Upload</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <section id="navBarContainer">
+    <div class="imageContainer">
+        <img src="./images/footerLogo.jpg" alt="" width="100">
+    </div>
+    <div class="navigatorContainers">
+            <a href="../adminIndex.html">Home</a>
+            <a href="../form.html">Add Tour</a>
+            <a href="./graph.html">Analysis</a>
+            <a href="./editTour.html">Edit Tour</a>
+    </div>
+
+</section>
+  <h1>Tour Data Upload</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <div>
+      <label for="name">Tour Name:</label>
+      <input type="text" name="name" id="name" required><br>
+    </div>
+    <div>
+      <label for="visits">Visits:</label>
+      <input type="number" name="visits" id="visits" required><br>
+    </div>
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" name="price" id="price" required><br>
+    </div>
+    <div>
+      <label for="AverageRating">Average Rating:</label>
+      <input type="number" name="AverageRating" id="AverageRating" required><br>
+    </div>
+
+      <label for="description">Description:</label>
+      <textarea name="description" id="description" required></textarea><br>
+
+    <label for="imageCover">Tour Image:</label>
+    <input type="file" name="imageCover" id="imageCover" accept="image/*" required><br>
+    <div>
+      <label for="duration">Duration:</label>
+      <input type="text" name="duration" id="duration" required><br>
+    </div>
+    <div>
+      <label for="discount">Discount:</label>
+      <input type="number" name="discount" id="discount" required><br>
+    </div>
+    <div>
+      <label for="places">Places (comma-separated):</label>
+      <input type="text" name="places" id="places" required><br>
+    </div>
+    <div>
+      <label for="stay">Stay:</label>
+      <input type="text" name="stay" id="stay" required><br>
+    </div>
+    <div>
+      <label for="food">Food:</label>
+      <input type="text" name="food" id="food" required><br>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 20px;">
+      <input type="submit"  value="Upload Tour Data">
+    </div>
+  </form>
+  <footer>
+    <div class="container">
+        <div class="footer-sections">
+            <div class="footer-section">
+                
+            </div>
+            <div class="footer-section">
+                <img src="./public/images/footerLogo.jpg" alt="" width="150">
+                <p>We always make our customers happy by providing as many choises as possible</p>
+                <div class="footer-social-icons" style="width: fit-content;">
+                    <img src="./public/images/facebook.png" alt="">
+                    <img src="./public/images/twitter.png" alt="">
+                    <img src="./public/images/instagram.png" alt="">
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Menu</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe on our destination review <br> newsletters</h3>
+                
+                    <div class="form-section">
+                        <img src="./public/images/messagefooter.png" alt="">
+                        <label for="email"> Your Email
+                            <input type="email" id="email" name="email" placeholder="exp - abc@gmail.com ">
+                        </label>
+                    </div>
+                    <!-- <button type="submit"><img src="./public/images/arrowleft.png" alt=""></button> -->
+                
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="./script.js"></script>
+</body>
+</html>

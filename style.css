@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    /* color palate */
+    --primary-color: #7b61ff;
+    --secondary-color: #f6f4ff;
+    --footer-color: #f9f9f9;
+  
+    /* font size & weight */
+    --title-font-size: 2rem;
+    --small-font-size: 1.3rem;
+    --h2-font-weight: 600;
+  
+    /* card-gap */
+    --card--gap: 3.2rem;
+  
+    --conatiner--size: 73%;
+  }
+*{
+  margin: 0%;
+  border: none;
+  padding: 0%;
+}
+a{
+  text-decoration: none;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px;
+  }
+  
+  form {
+    /* text-align: center; */
+    margin: 20px auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    /* max-width: 600px; */
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: fit-content;
+    border-radius: 20px;
+  }
+  
+  form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  form div{
+    width: 70%;
+    display: flex;
+  }
+  
+  .imageContainer{
+    width: 50%;
+    padding: 30px;
+  }
+  .navigatorContainers{
+    width: 50vw;
+    /* color: var(--secondary-color); */
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navigatorContainers a{
+    color: var(--secondary-color);
+  }
+  #navBarContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  
+  #navBarContainer{
+    height: 100px;
+    /* box-sizing: border-box; */
+    background-color: #7b61ff;
+  }
+
+  footer {
+    /* font-size: 10px; */
+    background: var(--footer-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 120px;
+    box-sizing: border-box;
+  }
+  
+  .footer-sections {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr;
+    /* align-items: center;  */
+    justify-content: space-between;
+  }
+  .footer-sections ul {
+    margin-top: 2rem;
+  }
+  .footer-section p {
+    font-size: 1rem;
+    width: 354px;
+    line-height: 1.9;
+    margin-block: 1rem 2rem;
+    color: #5b5b5b;
+  }
+  .footer-section a {
+    color: #5b5b5b;
+    font-size: 1rem;
+  }
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .footer-section:last-child {
+    margin-left: auto;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-section:last-child form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .footer-section:last-child label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    background-color: #fff;
+    color: #5b5b5b;
+    padding-left: 5px;
+  }
+  
+  .footer-section:last-child input {
+    border: none;
+    outline: none;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+  }
+  
+  .footer-section:last-child img {
+    margin-right: 1rem;
+  }
+  .form-section {
+    display: flex;
+    justify-content: center;
+    line-height: 1.2;
+    background-color: #fff;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    padding-right: 3rem;
+    border-radius: 12px;
+  }
+  .footer-section:last-child button {
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .footer-section:last-child button img {
+    margin-right: 0;
+  }
+  footer{
+    width: 100vw;
+  }
+  ul {
+    list-style: none;
+  }

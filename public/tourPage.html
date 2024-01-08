@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="./styles/tourPage.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+<body>
+    <section id="navBarContainer" >
+        <div id="navBar" style="font-size: 16px;">
+            <div id="logoContainer">
+                <img src="./images/manasLogo.png" alt="" width="200">
+            </div>
+            <div id="navigators">
+                <a href="./index.html" class="navigatorBtns">Home</a>
+                <a href="#about" class="navigatorBtns">About</a>
+                <a href="footer" class="navigatorBtns">Contact</a>
+                <a href="./filter.html" class="navigatorBtns">Explore</a>
+            </div>
+        </div>
+    </section>
+    <div id="mainContainer">
+        <div id="tourContainer">
+                <div id="tourImgContainer">
+                    <img alt="Tour Image" id="tourImage" width="800">
+                </div>
+                <div id="tourInfoContainer">
+                    <div id="tourName">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos?
+                    </div>
+                    <div id="description">
+                        <div id="duration">
+                            <img src="./images/time.png" alt="" width="25">
+                            <span>Duration : </span>
+                            <span id="durationValue">3 Days</span>
+                        </div>
+                        <div id="price">
+                            <img src="./images/price.png" alt="" width="25">
+                            <span>Price : </span>
+                            <span id="priceValue">Rs. 10000</span>
+                            <span>per person</span>
+                        </div>
+                        <div id="stay">
+                            <img src="./images/accomodation.png" alt="" width="25">
+                            <span>Stay : </span>
+                            <span id="stayValue">Hotel</span>
+                        </div>
+                        <div id="food">
+                            <img src="./images/meal.png" alt="" width="25">
+                            <span>Food : </span>
+                            <span id="foodValue">Breakfast, Lunch, Dinner</span>
+                        </div>  
+                        <div id="placesContainer">
+                            <img src="./images/location.png" alt="" width="25">
+                            <span>Places : </span>
+                            <ul id="places" style="list-style: circle;">
+                            </ul>
+                        </div>
+                        <div id="info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae non ratione nihil, repellendus quibusdam ab porro, molestias nesciunt dolore fugit fuga iure quaerat enim omnis repudiandae odio est ullam? Consectetur aspernatur deserunt, et laboriosam laudantium ab non fugit, tempore velit soluta eveniet assumenda sit cupiditate quibusdam ut. Omnis, cupiditate.
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <!-- <button id="sendDetails" class="smallBtn">Send Details</button> -->
+                    <button id="Rate" class="smallBtn">Rate</button>
+                </div>
+            </div>
+        <div id="agentContainer">
+            <div id="qrContainer">
+                <img src="./images/qr.png" alt="QR Code" width="300">
+            </div>
+            <span>Scan To Pay</span>
+            <div id="contactMsg">
+                Please contact the agent for registration and payment
+            </div>
+            <span id="agent">Agent Name : 1234567890</span>
+        </div>
+
+    </div>
+    <div id="ratingDialog" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeRatingDialog()">&times;</span>
+          <p>Rate this Tour:</p>
+          <div id="stars">
+            <span class="star" onclick="setRating(1)">&#9734;</span>
+            <span class="star" onclick="setRating(2)">&#9734;</span>
+            <span class="star" onclick="setRating(3)">&#9734;</span>
+            <span class="star" onclick="setRating(4)">&#9734;</span>
+            <span class="star" onclick="setRating(5)">&#9734;</span>
+          </div>
+        </div>
+      </div>
+    
+    <script src="./scripts/tourPage.js"></script>
+    <footer>
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    
+                </div>
+                <div class="footer-section">
+                    <img src="" alt="">
+                    <p>We always make our customers happy by providing as many choises as possible</p>
+                    <div class="footer-social-icons" style="width: fit-content;">
+                        <img src="./images/facebook.png" alt="">
+                        <img src="./images/twitter.png" alt="">
+                        <img src="./images/instagram.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Menu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Subscribe on our destination review <br> newsletters</h3>
+                    <form>
+                        <div class="form-section">
+                            <img src="./images/messagefooter.png" alt="">
+                            <label for="email"> Your Email
+                                <input type="email" id="email" name="email" placeholder="exp - abc@gmail.com ">
+                            </label>
+                        </div>
+                        <button type="submit"><img src="./images/arrowleft.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
