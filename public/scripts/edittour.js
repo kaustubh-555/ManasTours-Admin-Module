@@ -24,7 +24,7 @@ function addTourCard(tour){
     container.appendChild(tourCard);
 }
 async function getAllTours(){
-    await fetch("/getAllTours",{
+    await fetch("https://manastours-admin-module.onrender.com/getAllTours",{
         method: 'GET',
         headers: {'Content-Type': 'application/json'},
     }).then((response)=>{

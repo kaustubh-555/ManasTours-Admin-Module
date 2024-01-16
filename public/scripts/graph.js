@@ -1,5 +1,5 @@
 let getData=async(index)=>{
-    let data=await fetch("/getAllTours",{
+    let data=await fetch("https://manastours-admin-module.onrender.com/getAllTours",{
         method: 'GET',
         headers: {'Content-Type': 'application/json'}
     }).then((response)=>{

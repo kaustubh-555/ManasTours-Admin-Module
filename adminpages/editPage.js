@@ -19,7 +19,7 @@ console.log(id);
 //     let placesArray=tour.places;
 //     palcesContainer.value=placesArray;
 // }
-fetch("/getTourData",{
+fetch("https://manastours-admin-module.onrender.com/getTourData",{
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({id: id})
@@ -63,7 +63,7 @@ sub.addEventListener("click",(e)=>
 let deleteTour=document.getElementById("deleteBtn");
 deleteTour.addEventListener("click",async(e)=>{
     e.preventDefault();
-    let result=await fetch("/deleteTour",{
+    let result=await fetch("https://manastours-admin-module.onrender.com/deleteTour",{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({id: id})
