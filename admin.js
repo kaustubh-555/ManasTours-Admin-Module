@@ -12,6 +12,11 @@ mongoose.connect("mongodb+srv://KautubhSuroshi:tourisma%40123@cluster0.bt1crzy.m
   useUnifiedTopology: true,
 });
 
+let db=mongoose.connection;
+
+db.once('open',()=>{
+   console.log("connected to DB !")
+})
 app.use(express.json());
 
 const storage = multer.diskStorage({
@@ -20,6 +25,7 @@ const storage = multer.diskStorage({
     cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
   },
 });
+
 
 const upload = multer({ storage });
 app.use(express.urlencoded({ extended: true }));
@@ -30,10 +36,10 @@ app.use((req,res,next)=>{
 })
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/adminIndex.html');
+  res.sendFile(__dirname + '/index.html');
 });
-app.get('*/adminIndex.html', (req, res) => {
-  res.sendFile(__dirname + '/adminIndex.html');
+app.get('*/index.html', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 });
 app.get('/form.html', (req, res) => {
   res.sendFile(__dirname + '/form.html');

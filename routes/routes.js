@@ -44,7 +44,7 @@ router.get("*.svg",(req,res)=>{
 })
 
 router.get("/getUser",getUser)
-router.get("/getAllTours",getAllTours)
+router.get("*/getAllTours",getAllTours)
 router.post("/updateRating",updateRating)
 router.get("/getHomePageTours",getHomePageTours)
 
